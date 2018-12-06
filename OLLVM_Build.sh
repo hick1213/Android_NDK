@@ -19,18 +19,18 @@ cp $NDK/build/core/toolchains/x86_64-clang/* $NDK/build/core/toolchains/x86_64-c
 
 
 sed -i "" 's/^TOOLCHAIN_NAME.*/TOOLCHAIN_NAME := ollvm-4.0/' $NDK/build/core/toolchains/arm-linux-androideabi-clang-ollvm4.0/setup.mk
-sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(OLLVM_NAME))/' $NDK/build/core/toolchains/arm-linux-androideabi-clang-ollvm4.0/setup.mk
+sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(TOOLCHAIN_NAME))/' $NDK/build/core/toolchains/arm-linux-androideabi-clang-ollvm4.0/setup.mk
 sed -i "" 's/^TOOLCHAIN_PREFIX.*/TOOLCHAIN_PREFIX := $(TOOLCHAIN_ROOT)\/bin/' $NDK/build/core/toolchains/arm-linux-androideabi-clang-ollvm4.0/setup.mk
 
 sed -i "" 's/^TOOLCHAIN_NAME.*/TOOLCHAIN_NAME := ollvm-4.0/' $NDK/build/core/toolchains/aarch64-linux-android-clang-ollvm4.0/setup.mk
-sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(OLLVM_NAME))/' $NDK/build/core/toolchains/aarch64-linux-android-clang-ollvm4.0/setup.mk
+sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(TOOLCHAIN_NAME))/' $NDK/build/core/toolchains/aarch64-linux-android-clang-ollvm4.0/setup.mk
 sed -i "" 's/^TOOLCHAIN_PREFIX.*/TOOLCHAIN_PREFIX := $(TOOLCHAIN_ROOT)\/bin/' $NDK/build/core/toolchains/aarch64-linux-android-clang-ollvm4.0/setup.mk
 
 sed -i "" 's/^TOOLCHAIN_NAME.*/TOOLCHAIN_NAME := ollvm-4.0/' $NDK/build/core/toolchains/x86-clang-ollvm4.0/setup.mk
-sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(OLLVM_NAME))/' $NDK/build/core/toolchains/x86-clang-ollvm4.0/setup.mk
+sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(TOOLCHAIN_NAME))/' $NDK/build/core/toolchains/x86-clang-ollvm4.0/setup.mk
 sed -i "" 's/^TOOLCHAIN_PREFIX.*/TOOLCHAIN_PREFIX := $(TOOLCHAIN_ROOT)\/bin/' $NDK/build/core/toolchains/x86-clang-ollvm4.0/setup.mk
 
 sed -i "" 's/^TOOLCHAIN_NAME.*/TOOLCHAIN_NAME := ollvm-4.0/' $NDK/build/core/toolchains/x86_64-clang-ollvm4.0/setup.mk
-sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(OLLVM_NAME))/' $NDK/build/core/toolchains/x86_64-clang-ollvm4.0/setup.mk
+sed -i "" 's/^TOOLCHAIN_ROOT.*/TOOLCHAIN_ROOT := $(call get-toolchain-root,$(TOOLCHAIN_NAME))/' $NDK/build/core/toolchains/x86_64-clang-ollvm4.0/setup.mk
 sed -i "" 's/^TOOLCHAIN_PREFIX.*/TOOLCHAIN_PREFIX := $(TOOLCHAIN_ROOT)\/bin/' $NDK/build/core/toolchains/x86_64-clang-ollvm4.0/setup.mk
 
