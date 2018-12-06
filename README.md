@@ -21,3 +21,8 @@ PLATFORM=android-22
 
 LOCAL_ANDROID_NDK=/Users/xxx/Downloads/android-ndk-r16b
 
+BUILD SCRIPT FOR OLLVM
+======
+edit the OLLVM.sh
+set android ndk path 
+sh OLLVM.sh
